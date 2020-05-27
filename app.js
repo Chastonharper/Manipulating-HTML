@@ -45,6 +45,17 @@ button.addEventListener("click", function() {
     let text = document.createTextNode("Chaston");
     span.appendChild(text);
 })
+let friends = ["Friend1", "Friend2", "Friend3", "Friend4", "Friend5", "Friend6", "Friend7", "Friend8", "Friend9", "Friend10"];
+var myBtn3 = document.getElementById("myBtn3");
+let ul = document.getElementById("ul");
+myBtn3.addEventListener("click", function () {
+    for (let i = 0; i < friends.length; i++) {
+        let li = document.createElement("li");
+        let name = document.createTextNode(friends[i]);
+        li.appendChild(name);
+        ul.appendChild(li);
+    }
+});
 
 })
 
