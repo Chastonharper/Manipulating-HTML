@@ -37,5 +37,14 @@ document.addEventListener("DOMContentLoaded", function (){
    
 })
 
+let button = document.getElementById("myBtn2");
+let div = document.getElementById("mydiv");
+button.addEventListener("click", function() {
+    let span = document.createElement("span");
+    div.appendChild(span);
+    let text = document.createTextNode("Chaston");
+    span.appendChild(text);
+})
+
 })
 
